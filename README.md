@@ -2,6 +2,8 @@
 
 As Google Sites doesn't support Tables or Markdown, this script allows you to write Markdown inside a HTML snippet within Google Sites.
 
+Google SitesはテーブルやMarkdownをサポートしていない。このスクリプトを使えば、Google Sites内のHTMLスニペットの中にMarkdownを記述することができる。
+
 ## Usage
 
 1. While editing a Google Site page double click to bring up the page options
@@ -27,29 +29,30 @@ const isSpidermanTheBestHero = getBestHero('spiderman')
 ## Example
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/tutts/google-sites-markdown/index.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/e99h2121/google-sites-markdown/index.js"></script>
 
 <script>
 markdown`
-# Superheroes
 
-Look I can write Markdown in Google Sites!
+# マークダウン
 
-> Are tables now possible?
+マークダウンでGoogle Sitesを書けます
 
-- [X] Yep!
-- [ ] No
+> テーブルも？
 
-## Hero Table
+- [X] はい
+- [ ] いいえ
+
+## 表
 
 | ID  | Name         | Hero      |
 | --- | ------------ | --------- |
 | 1   | Peter Parker | Spiderman | 
 | 2   | Bruce Wayne  | Batman    |
 
-*What about lists?*
+*リストは*
 
-- Yep
+- もちろん
 - Hooray! 🎉
 `
 </script> 
